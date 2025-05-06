@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+void mostrarNumero(int n){
+printf("\nNumero digitado foi: %d", n);
+}
+
+int leValor(){
+int numero;
+printf("Digite numero: ");
+scanf("%d", &numero);
+return numero;
+}
+
+int main(){
+int numero;
+numero = leValor();
+mostrarNumero(numero);
+return 0;
+}
