@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+float soma(float n1, float n2) {
+    return n1 + n2;
+}
+
+float lerNotas() {
+    float n;
+    printf("\nDigite suas notas: ");
+    scanf("%f", &n);  // Changed %lf to %f
+    return n;
+}
+
+void notaF(float nota) {
+    printf("\nO valor da nota: %.2f\n", nota);  // Print formatted float value
+}
+
+int main() {
+    float n1, n2, nf;  // Changed from int to float
+    n1 = lerNotas();
+    n2 = lerNotas();
+    nf = soma(n1, n2);  // Corrected variable name
+    notaF(nf);
+    return 0;
+}
